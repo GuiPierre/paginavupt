@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VUPT</title>
+    <link rel="icon" href="./img/favicon.ico" type="image/png">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho-borda">
+            <a href="#">
+                <img class="logo" src="./img/logo.png" alt="">
+            </a>
+            <div class="cabecalho-items">
+                <a href="#">SOBRE NÓS</a>
+                <a href="#">FAQ</a>
+                <a  href="#">JÁ SOU CLIENTE</a>    
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <h1 style="font-size: 21px;">ÁREA DE CONTROLE</h1>
+
+        <div class="secoes">
+
+            <a style="text-decoration: none;" href="#">
+                <div class="secoes_btn-black">
+                    <div class="badge_black">
+                        <p>125</p>
+                    </div>
+                    <span>ABANDONOS</span>
+                </div>
+            </a>
+
+            <a style="text-decoration: none;" href="#">
+                <div class="secoes_btn">
+                    <div class="badge-2">
+                        <p>58</p>
+                    </div>
+                    <span>PEDIDOS</span>
+                </div>
+            </a>
+
+            <a style="text-decoration: none;" href="#">
+                <div class="secoes_btn">
+                    <div class="badge-3">
+                        <p>973</p>
+                    </div>
+                    <span>DESISTÊNCIAS</span>
+                </div>
+            </a>
+
+            <a style="text-decoration: none;" href="#">
+                <div class="secoes_btn">
+                    <div class="badge-4">
+                        <p>1052</p>
+                    </div>
+                    <span>CONTRATAÇÕES</span>
+                </div>
+            </a>
+            
+        </div>
+
+        <div class="caixa-pesquisa">
+            <label for="">
+                <i class="fa fa-search"></i>
+            </label>
+            <div class="input-wrapper">
+                <input type="text" placeholder="Buscar...">
+            </div><br>
+        </div><br>
+        <label class="ordenar" for="" style="color: gray;">ORDENAR POR:</label>
+        <select name="" id="">
+            <option value="1">ÚLTIMO ACESSO DO USUÁRIO (MAIS RECENTE)</option>
+            <option value="2">ÚLTIMO ACESSO DO USUÁRIO (MAIS ANTIGO)</option>
+            <option value="3">ÚLTIMAS TENTATIVAS DE RESGATE AUTOMÁTICO</option>
+            <option value="4">ÚLTIMAS TENTATIVAS DE RESGATE MANUAL</option>
+            <option value="5">ÚLTIMAS TENTATIVAS DE RESGATE PÓS-RECUSA</option>
+        </select>
+        <img src="./img/seta.png" alt="">
+        <br><br>
+
+
+    
+        <div class="div-mult">
+            <p>NÍVEL DE TRAJETÓRIA</p>
+            <div class="multiselect-container" onclick="toggleOptions(event)">
+                <span class="selected-options">TODOS</span>
+                <span class="arrow-icon"><img src="./img/seta.png" alt=""></span>
+                <ul class="multiselect-options">
+                    <li>
+                        <input type="checkbox" id="todos" onchange="toggleAllOptions(this)">
+                        <label for="todos" style="color: rgb(250, 113, 64);">TODOS</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="opcao1" onchange="updateSelections()">
+                        <label for="opcao1">LEAD NÍVEL #1</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="opcao2" onchange="updateSelections()">
+                        <label for="opcao2">LEAD NÍVEL #2</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="opcao3" onchange="updateSelections()">
+                        <label for="opcao3">INTERESSE INCOMPLETO</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="opcao4" onchange="updateSelections()">
+                        <label for="opcao4">INTERESSE COMPLETO</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="opcao5" onchange="updateSelections()">
+                        <label for="opcao5">INTERESSE COM VALOR</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="opcao6" onchange="updateSelections()">
+                        <label for="opcao6">DOCUMENTAÇÃO INCOMPLETA</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="opcao7" onchange="updateSelections()">
+                        <label for="opcao7">DOCUMENTAÇÃO COMPLETA</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+
+        <!-- Segundo Multiselect -->
+        <div class="div-mult">
+            <p>RESGATE</p>
+            <div class="multiselect-container" onclick="toggleOptions(event)">
+                <span class="selected-options">TODOS</span>
+                <span class="arrow-icon"><img src="./img/seta.png" alt=""></span>
+                <ul class="multiselect-options">
+                    <li>
+                        <input type="checkbox" id="todos2" onchange="toggleAllOptions(this)">
+                        <label for="todos2" style="color: rgb(250, 113, 64);">TODOS</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="opcao8" onchange="updateSelections()">
+                        <label for="opcao8">RESGATE AUTOMÁTICO (E-MAIL #1)</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="opcao9" onchange="updateSelections()">
+                        <label for="opcao9">RESGATE AUTOMÁTICO (WHATSAPP #1)</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="opcao10" onchange="updateSelections()">
+                        <label for="opcao10">RESGATE AUTOMÁTICO (WHATSAPP #2)</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="opcao11" onchange="updateSelections()">
+                        <label for="opcao11">RESGATE MANUAL (FOLLOW-UP)</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="opcao12" onchange="updateSelections()">
+                        <label for="opcao12">RESGATE PÓS-RECUSA</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    
+
+        <div class="container-info">
+            <div class="caixa-info">
+                <div class="caixa-info-borda">
+                    <div class="info-itens">
+                        <div>GABRIEL PIERRE CARDOSO SILVA</div>
+                        <div>24 ANOS</div>
+                        <div>gagapierre@hotmail.com</div>
+                        <div>-</div>
+                        <div>-</div>
+                        <div>-</div>
+                        <div>-</div>
+                        <div>-</div>
+                    </div>
+                </div>
+                <div class="info-txt">
+                    <p>ÚLTIMO ACESSO DO USUÁRIO: 01/08/2023</p>
+                </div>
+            </div>
+
+
+
+            <div class="caixa-info">
+                <div class="caixa-info-borda">
+                    <div class="info-itens">
+                        <div>GABRIEL PIERRE CARDOSO SILVA</div>
+                        <div>24 ANOS</div>
+                        <div>gagapierre@hotmail.com</div>
+                        <div>(11) 9-8563-8724</div>
+                        <div>-</div>
+                        <div>-</div>
+                        <div>-</div>
+                        <div>-</div>
+                    </div>
+                </div>
+                <div class="info-txt">
+                    <p>ÚLTIMO ACESSO DO USUÁRIO: 01/08/2023</p>
+                </div>
+            </div>
+
+
+
+            <div class="caixa-info">
+                <div class="caixa-info-borda">
+                    <div class="info-itens">
+                        <div>GABRIEL PIERRE CARDOSO SILVA</div>
+                        <div>24 ANOS</div>
+                        <div>gagapierre@hotmail.com</div>
+                        <div>(11) 9-8563-8724</div>
+                        <div>AMIL</div>
+                        <div>AMIL FÁCIL F110 SP FAMILIAR</div>
+                        <div>FAMILIAR</div>
+                        <div>R$1.200,00</div>
+                    </div>
+                </div>
+                <div class="info-txt">
+                    <p>ÚLTIMO ACESSO DO USUÁRIO: 01/08/2023</p>
+                </div>
+            </div>
+
+
+
+            <div class="caixa-info2">
+                <div class="caixa-info-borda2">
+                    <div class="info-itens2">
+                        <div>GABRIEL PIERRE CARDOSO SILVA</div>
+                        <div>24 ANOS</div>
+                        <div>gagapierre@hotmail.com</div>
+                        <div>(11) 9-8563-8724</div>
+                        <div>AMIL</div>
+                        <div>AMIL FÁCIL F110 SP FAMILIAR</div>
+                        <div>FAMILIAR</div>
+                        <div>R$1.200,00</div>
+                    </div>
+                </div>
+            </div>
+            <div class="info-txt2">
+                <p>ÚLTIMO ACESSO DO USUÁRIO: 01/08/2023</p>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <script src="./script.js"></script>
+    </main>
+
+
+</body>
+
+</html>

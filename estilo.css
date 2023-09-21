@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: rgb(240, 239, 239);
+  font-family: Poppins;
+}
+
+.cabecalho {
+  height: 4em;
+  background: rgb(245, 244, 225);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.cabecalho-borda {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  padding: 0.5em;
+  width: auto;
+  height: 60px;
+}
+
+.cabecalho-items {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  gap: 4em;
+}
+
+.cabecalho-items a {
+  text-decoration: none;
+  font-weight: 600;
+  color: rgb(235, 110, 65);
+}
+
+.cabecalho-items a:hover {
+  text-decoration: underline;
+}
+
+.cabecalho-items a:last-child {
+  font-weight: 100;
+  text-decoration: none;
+  color: white;
+  border: #472469 1px solid;
+  border-radius: 9px;
+  background: #472469;
+  padding: 5px 28px 5px 28px;
+}
+
+.cabecalho-items a:last-child:hover {
+  background-color: rgba(56, 11, 99, 0.726);
+}
+
+main {
+  padding-top: 1em;
+  justify-content: center;
+  display: block;
+  margin-left: 3%;
+}
+
+h1 {
+  color: #472469;
+  margin-top: 2%;
+  font-size: 25px;
+}
+
+.secoes {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.secoes_btn {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  margin-top: 35px;
+  margin-right: 15px;
+  color: white;
+  width: 13.8em;
+  height: 3em;
+  border-radius: 3px;
+  border: 1px solid gray;
+  background-color: gray;
+}
+
+.secoes_btn-black {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  margin-top: 35px;
+  margin-right: 15px;
+  color: white;
+  width: 13.8em;
+  height: 3em;
+  border-radius: 3px;
+  border: 1px solid black;
+  background-color: black;
+}
+
+.badge-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border: 1px solid gray;
+  background-color: rgb(255, 255, 255);
+  color: gray;
+  border-radius: 100%;
+  position: absolute;
+  margin-top: -3rem;
+  margin-left: 12.5em;
+}
+
+.badge-2 p {
+  font-size: 12px;
+}
+
+.badge-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border: 1px solid gray;
+  background-color: rgb(255, 255, 255);
+  color: gray;
+  border-radius: 100%;
+  position: absolute;
+  margin-top: -3rem;
+  margin-left: 12.5em;
+}
+
+.badge-3 p {
+  font-size: 13px;
+}
+
+.badge-4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border: 1px solid gray;
+  background-color: rgb(255, 255, 255);
+  color: gray;
+  border-radius: 100%;
+  position: absolute;
+  margin-top: -3rem;
+  margin-left: 12.5em;
+}
+
+.badge-4 p {
+  font-size: 13px;
+}
+
+.badge_black {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border-radius: 100%;
+  position: absolute;
+  margin-top: -3rem;
+  margin-left: 12.5em;
+}
+
+.badge_black p {
+  font-size: 13px;
+}
+
+/*input{
+    margin-top: 20px;
+    width: 63.5em;
+    height: 45px;
+  }*/
+
+.caixa-pesquisa {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+  height: 2.4em;
+  margin-top: 1.5em;
+  width: 57.9em;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: white;
+
+}
+
+.fa-search {
+  color: gray;
+  margin-left: 2em;
+  margin-right: 0;
+  cursor: pointer;
+}
+
+.input-wrapper input {
+  border: none;
+  padding-right: 43.6em;
+  color: gray;
+  font-family: Poppins;
+  font-size: 15px;
+  margin-left: 1em;
+}
+
+.caixa-pesquisa:focus-within {
+  border: 2px black solid;
+  border-radius: 4px;
+}
+
+.input-wrapper input:focus-visible {
+  outline: none;
+}
+
+.ordenar {
+  font-size: 13px;
+}
+
+select {
+  font-family: Poppins;
+  font-size: 13px;
+  display: inline;
+  align-items: center;
+  color: rgb(71, 70, 70);
+  outline: 0;
+  appearance: none;
+  background: transparent;
+  border: 0 !important;
+}
+
+.txt-ms {
+  font-family: Poppins;
+  color: #472469;
+  font-weight: 300;
+  font-size: 11px;
+}
+
+.multiselect-container {
+  background: white;
+  display: inline-block;
+  height: 50px;
+  width: 230px;
+  border: 2px solid #000;
+  border-radius: 6px;
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+  margin-right: 1em;
+}
+
+.selected-options {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.multiselect-options {
+  background: white;
+  border: 1px solid transparent;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 22em;
+  padding: 3px 0 0 9px;
+  list-style: none;
+  max-height: none;
+  overflow: hidden;
+}
+
+.multiselect-options li {
+  margin-bottom: 4px;
+  width: 100%;
+}
+
+.multiselect-options li:hover {
+  background: rgb(228, 225, 225);
+}
+
+.arrow-icon {
+  font-size: 12px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-8px) rotateX(0deg) translateZ(0px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.multiselect-container.active .arrow-icon {
+  transform: translateY(-8px) rotateX(180deg) translateZ(0px);
+}
+
+.div-mult {
+  display: inline-block;
+}
+
+.div-mult p {
+  font-size: 12px;
+  font-weight: 800;
+  color: #472469;
+  align-items: center;
+}
+
+.caixa-info,
+.caixa-info2 {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  width: auto;
+}
+
+.caixa-info-borda {
+  display: flex;
+  border: solid rgb(217, 217, 217);
+  border-radius: 3px;
+  background: white;
+  width: 80em;
+  height: 6.5rem;
+}
+
+.info-itens>div,
+.info-itens2>div {
+  flex: 1;
+  flex-grow: 1;
+  font-size: 1em;
+}
+
+.info-itens,
+.info-itens2 {
+  width: 100%;
+  font-size: 12px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  gap: 4em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.caixa-info-borda2 {
+  display: flex;
+  border: solid red;
+  border-radius: 3px;
+  background: rgb(255, 231, 231);
+  width: 80em;
+  height: 6.5rem;
+}
+
+.info-txt {
+  color: rgb(196, 193, 193);
+  font-size: 12px;
+  position: absolute;
+  margin-top: 6em;
+  margin-left: 85em;
+}
+
+.info-txt2 {
+  color: black;
+  font-size: 12px;
+  position: absolute;
+  margin-top: -2em;
+  margin-left: 85em;
+}
